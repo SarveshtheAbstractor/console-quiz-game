@@ -58,7 +58,7 @@ var keepScore = score();
 function nextQuestion(){
         var n = Math.floor(Math.random() * questions.length);
         questions[n].displayquestion();
-        var answer = prompt('Enter correct answer');    
+        var answer = prompt('Enter correct answer and if you want to exit, Please type exit in this prompt');    
         if(answer !== 'exit'){
             questions[n].checkanswer(parseInt(answer),keepScore);
             nextQuestion();
